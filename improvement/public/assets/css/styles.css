@@ -608,7 +608,6 @@ progress {
   background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
-  max-width: 100%;
   height: auto;
 }
 
@@ -3942,7 +3941,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
+  color: #aaa;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3952,7 +3951,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #0a58ca;
+  color: #aaa;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -3995,11 +3994,14 @@ textarea.form-control-lg {
   background: none;
   border: 0;
   border-radius: 0.25rem;
+  color:rgba(0, 0, 0, 0.573);
+  font-size: 13px;
+  font-weight: 400;
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #0d6efd;
+  background-color: #aaa;
 }
 
 .nav-fill > .nav-link,
@@ -4538,9 +4540,19 @@ textarea.form-control-lg {
 }
 
 .card-footer {
-  padding: 0.5rem 1rem;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  
 }
 .card-footer:last-child {
   border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
@@ -4767,7 +4779,7 @@ textarea.form-control-lg {
 .page-link {
   position: relative;
   display: block;
-  color: #0d6efd;
+  color: #ccc;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
